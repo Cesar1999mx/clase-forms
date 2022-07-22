@@ -1,0 +1,186 @@
+:root {
+    --red: red;
+    --cyan: #4ABEBD;
+    --cyan-dark: #29AFAD;
+    --bright: hsl(71, 73%, 54%);  
+    --light-ray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+}
+
+html{
+font-size: 100%;
+box-sizing: border-box;
+
+background-color: var(--grayish-blue);
+background: var(--light-ray)
+}
+
+*, *:before, *:after {
+box-sizing: inherit;
+}
+
+.button{
+background-color: brown;
+border: 0ch;
+padding: 8px 36px;
+border-radius: 0px;
+color: white;
+font-weight: bold;
+}
+
+body{
+margin: 0;
+padding: 0;
+line-height: 1.5;
+font-family: 'Karla', sans-serif;
+}
+
+h3,h2 {
+    color: var(--light-ray);
+}
+
+.container {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+min-width: 100vw;
+}
+
+.container-body, .container-header {
+    width: 43.75rem;
+}
+
+.container-header{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+}
+
+.container-body{
+display: flex;
+justify-content: center;
+}
+
+.login-subscription{
+    background-color: var(--cyan-dark);
+    width: 400px;
+    padding: 10px 20px;
+    border-radius: 0 0 0 10px;
+    padding-bottom: 30px;
+}
+
+.login-subscription p, h2{
+margin: 0;
+color: var(--light-ray);
+}
+
+.login-subscription-info {
+    padding: 16px;
+}
+
+.form-container {
+background-color: var(--Cyan);
+width: 400px;
+padding: 10px 20px;
+border-radius: 0 0 10px 0;
+}
+
+.btn-login {
+    width: 214px;
+    background-color: var(--bright);
+    color: #fff;
+    padding: 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;  
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    font-weight: bold;  
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+  }
+
+.btn-login:hover {
+    opacity: 0.9;
+}
+
+.btn-login.active {
+transform: translateY(2px)
+}
+
+small {
+    color: #6CCDD0;
+    font-size: 16px;
+}
+
+h1{color: var(--cyan-dark);
+font-size: 24px;
+}
+
+.container-header p {
+    color: var(--brigth);
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.container-header :last-child {
+    font-size: 16px;
+color: var(--Grayish-Blue);
+}
+
+.form-container form{
+display: flex;
+flex-direction: column;
+justify-content: center;}
+
+.input-form {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid var(--grayish-blue);;
+    background-color: var(--light-ray);
+    margin-bottom: 10px;}
+
+label {
+    color: var(--light-ray);
+    font-size: 16px;}
+
+textarea{
+    font-family: 'Karla', sans-serif;}
+
+
+
+@media (max-width: 700px) {
+.container {padding: 10px;}        
+.container-body, .container-header {
+width: 100%;}}
+
+@media (max-width: 478px) {
+.container-body {
+flex-direction: column
+}    
+
+.login-subscription {
+display: none;
+     }
+    }
+
+    @media (max-width: 1000%) {
+main {
+padding: 100;
+
+        }
+    }
+
+
+
+
+
+
+
+
+    
